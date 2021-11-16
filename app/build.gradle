@@ -3,6 +3,8 @@ apply plugin: 'com.android.application'
 android {
   compileSdkVersion 29
 
+
+
   defaultConfig {
     applicationId "com.pluralsight.candycoded"
     minSdkVersion 15
@@ -12,6 +14,9 @@ android {
 
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
+    task wrapper(type: Wrapper){
+        gradleVersion = '7.2'
+    }
 
   buildTypes {
     release {
